@@ -165,11 +165,12 @@ header a:hover::after {
 .project-row {
   display: flex;
   justify-content: stretch;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 0;
 }
 
 .project {
+  width: 30%;
   padding: 1em;
   background-color: #fff;
   border-radius: 10px;
@@ -311,6 +312,9 @@ h3::after{
 }
 
 @media only screen and (max-width: 630px) {
+  .project {
+    width: 100%;
+  }
 
   .project-row {
     flex-wrap: wrap;
@@ -321,3 +325,16 @@ h3::after{
   }
   
  }
+
+footer { 
+  background: rgb(99, 151, 215);
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;  
+
+}
